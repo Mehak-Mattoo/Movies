@@ -1,7 +1,7 @@
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
-import { Bookmark, FolderSync, Home, House, Search, User } from "lucide-react-native";
+import { Bookmark,  House, Search, User } from "lucide-react-native";
 import { LucideIcon } from "lucide-react-native";
 const FocusedIcon = ({
   Icon,
@@ -14,15 +14,19 @@ const FocusedIcon = ({
 }) => {
   if (focused) {
     return (
-      <View className="min-w-[8rem] py-[16px] bg-midLightBrown w-full rounded-full flex flex-row items-center justify-center">
-        <Icon size={18} color="white" />
-        <Text className="font-bold ml-2">{title}</Text>
+      <View className="min-w-[7rem] md:min-w-[8rem] py-[20px] md:py-[18px]  bg-bone  rounded-full flex flex-row items-center justify-center">
+        <Icon size={18}  />
+        <Text
+          className={`font-bold ml-2` }
+        >
+          {title}
+        </Text>
       </View>
     );
   }
 
   return (
-    <View className="min-w-[8rem] bg-white w-full rounded-full flex flex-row items-center justify-center">
+    <View className="min-w-[8rem] flex flex-row items-center justify-center">
       <Icon size={18} color="white" />
     </View>
   );
@@ -34,8 +38,9 @@ const _layout = () => {
       screenOptions={{
         tabBarShowLabel: false,
         tabBarStyle: {
-          backgroundColor: "#504746",
+          backgroundColor: "#0C0A3E",
           position: "absolute",
+          borderColor: "transparent",
           borderRadius: 60,
           marginHorizontal: 20,
           marginBottom: 15,

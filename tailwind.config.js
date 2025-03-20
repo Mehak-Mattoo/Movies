@@ -6,13 +6,12 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      bg: "#504746",
-      midLightBrown: "#B89685",
-      lightBrown: "#BFADA3",
+      bg: "#0C0A3E",
+      darkBlue:"#1B1A4F",
+      turquiose: "#19647E",
       pink: "#FBB7C0",
-      magenta: "#B6244F",
-      warning: "#f39c12",
-    
+      bone: "#DAD2BC",
+
     },
   },
   plugins: [],
